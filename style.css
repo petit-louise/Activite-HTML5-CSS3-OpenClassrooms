@@ -1,0 +1,131 @@
+/*police*/
+@font-face
+{
+	font-family: 'aaarghnormal';
+    src: url('police/aaargh-webfont.eot');
+    src: url('police/aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/aaargh-webfont.woff2') format('woff2'),
+         url('police/aaargh-webfont.woff') format('woff'),
+         url('police/aaargh-webfont.ttf') format('truetype'),
+         url('police/aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*reste de la page*/
+body
+{
+	font-family: 'aaarghnormal', Arial, Serif;
+	background: url('img/fond.jpg') fixed no-repeat center;
+}
+#bloc_page /*grande section*/
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+    margin: auto;
+}
+#entete /*h1 PHOTO*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+div /*liseret*/
+{
+	background: #586A70;
+	color: #586A70;
+	position: absolute;
+	height: 100%;
+	width: 15%;
+}
+#articles /* experience etc*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	width: 90%;
+}
+#categorie /*section des articles et header*/
+{
+	display: flex;
+	flex-direction: column;
+    position: relative;
+    height: 100%;
+	width: 80%;
+	left: 20%;
+}
+.experience
+{
+	width: 33%;
+}
+.competences
+{
+	width: 33%
+}
+.formation
+{
+	width: 33%;
+}
+strong
+{
+	font-style: normal;
+	color: #33CC87;
+	font-size: medium;
+}
+.photo /*en tête*/
+{
+	position: relative;
+	left: 25%;
+}
+/*ancien cv*/
+h1
+{
+	text-align: center;
+}	
+h2
+{
+	box-shadow: 4px 4px 4px #43A177;
+	clear: both;
+	text-align: center;
+	padding: 12px;
+	width: auto;
+	height: auto;
+}
+/*listes*/
+.sous_categorie 
+{
+	padding: 20px ;
+	margin: 20px 20px;
+	text-align: left;
+	width: 90%;
+}
+ul em
+{
+	font-style: normal;
+	font-weight: bold;
+}
+@media all and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+	#liseret
+	 {
+	 	display: none;
+	 }
+	#articles
+	 {
+	 	display: flex;
+	 	flex-direction: column;
+	 }
+	.experience, .formation, .competences, .sous_categories
+	{
+		width: 100%;
+	}
+	#categorie
+	{
+		left: 0%;
+	}
+}
